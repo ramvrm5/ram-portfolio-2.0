@@ -17,98 +17,116 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     id: 1,
-    category: "frontend",
-    title: "LaunchWave Landing Page",
-    description: "React + Tailwind landing page",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    category: "fullstack",
+    title: "Task Management App",
+    description:
+      "A full-featured task and project management tool inspired by Jira, allowing users to manage multiple workspaces, projects, tasks, and team members with real-time updates.",
+    image: "/assets/work/work1.png",
+    link: "https://jira-clone-tawny-iota.vercel.app/sign-in",
+    github: "https://github.com/ramvrm5/jira-clone",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Next.js",
+      "shadcn / ui",
+      "Appwrite(NoSQL)",
+      "Authentication",
+    ],
   },
   {
     id: 2,
-    category: "frontend",
-    title: "Nextfolio Portfolio Site",
-    description: "Next.js portfolio site",
-    image: "/assets/work/thumb2.png",
-    link: "",
-    github: "",
-    tech: ["Next.js", "Tailwind CSS", "Shadcn UI"],
+    category: "fullstack",
+    title: "Note-Taking App",
+    description:
+      "A simplified version of Notion with dynamic blocks and an editor to structure notes with nested pages and real-time edits.",
+    image: "/assets/work/work2.png",
+    link: "https://note-taking-app-rosy-one.vercel.app/",
+    github: "https://github.com/ramvrm5/Notion-clone",
+    tech: [
+      "Next.js",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Appwrite(NoSQL)",
+      "Authentication",
+    ],
   },
   {
     id: 3,
     category: "fullstack",
-    title: "AuthBoard Dashbord",
-    description: "Mern app with authentication",
-    image: "/assets/work/thumb3.png",
-    link: "",
-    github: "",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
+    title: "E-commerce App",
+    description:
+      "A responsive e-commerce platform similar to Amazon with product listing, cart management, Stripe checkout, and authentication.",
+    image: "/assets/work/work3.png",
+    link: "https://amazon-2-o7pvi1358-ramvrm5.vercel.app/",
+    github: "https://github.com/ramvrm5/Amazon-2-yt",
+    tech: [
+      "React.js",
+      "TailwindCSS",
+      "Stripe API",
+      "shadcn/ui",
+      "Appwrite (NoSQL)",
+      "Authentication",
+    ],
   },
   {
     id: 4,
     category: "fullstack",
-    title: "ChatSync Platform",
-    description: "Real-time MERN app with chat functionality",
-    image: "/assets/work/thumb4.png",
-    link: "",
-    github: "",
-    tech: ["MERN", "Socket.IO", "Redux"],
+    title: "Messaging App",
+    description:
+      "A real-time messaging application with support for both group and individual chats.",
+    image: "/assets/work/work4.png",
+    link: "https://messaging-app-gray.vercel.app/",
+    github: "https://github.com/ramvrm5/Messaging-app",
+    tech: [
+      "React.js",
+      "TailwindCSS",
+      "shadcn / ui",
+      "Appwrite(NoSQL)",
+      "Authentication",
+    ],
   },
   {
     id: 5,
-    category: "uiux",
-    title: "FlowMobile App Design",
-    description: "Mobile-firs Figma design",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Figma", "Adobe XD"],
+    category: "fullstack",
+    title: "Package Tracking App",
+    description:
+      "A React Native-based logistics tracking system inspired by UPS with real-time location updates using Google Maps.",
+    image: "/assets/work/work5.png",
+    link: "https://github.com/ramvrm5/ups-clone",
+    github: "https://github.com/ramvrm5/ups-clone",
+    tech: [
+      "React Native",
+      "Google Maps API",
+      "Appwrite (NoSQL)",
+      "Authentication",
+    ],
   },
   {
     id: 6,
-    category: "uiux",
-    title: "ShopEase Dashboard Redesign",
-    description: "Redesign of e-commerce dashboard",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Figma", "Framer", "Whimsical"],
+    category: "frontend",
+    title: "React Responsive Animation Showcase",
+    description:
+      "A visually appealing animation site demonstrating advanced responsive design using Framer Motion.",
+    image: "/assets/work/work6.png",
+    link: "https://react-animate-six.vercel.app/",
+    github: "https://github.com/ramvrm5/react-animate",
+    tech: ["React.js", "TailwindCSS", "shadcn/ui", "Swiper", "Framer Motion"],
   },
   {
     id: 7,
-    category: "branding",
-    title: "Brewhaus Brand Identity",
-    description: "A bold and earthy visual identity for a modern coffee brand",
-    image: "/assets/work/thumb3.png",
-    link: "",
-    github: "",
-    tech: ["Illustrator", "Photoshop", "Figma"],
-  },
-  {
-    id: 8,
-    category: "branding",
-    title: "LunaSkin Luxury Branding",
-    description: "Elegant branding for a premium sincare product line",
-    image: "/assets/work/thumb4.png",
-    link: "",
-    github: "",
-    tech: ["Photoshop", "Figma", "Canva"],
-  },
-  {
-    id: 9,
-    category: "branding",
-    title: "novaTech Brand Kit",
+    category: "backend",
+    title: "Uniswap Blockchain Clone",
     description:
-      "Full branding kit for a tech startup including logo and brand book",
-    image: "/assets/work/thumb1.png",
-    link: "",
-    github: "",
-    tech: ["Illustrator", "Figma", "Notion"],
+      "A blockchain DApp that replicates Uniswap-style token swapping functionality with wallet integration.",
+    image: "/assets/work/work7.png",
+    link: "https://uniswap-blockchain-nine.vercel.app/",
+    github: "https://github.com/ramvrm5/uniswap-blockchaine",
+    tech: ["React.js", "TailwindCSS", "Ethers.js", "Web3", "Blockchain APIs"],
   },
 ];
 
-const categories = ["frontend", "fullstack", "uiux", "branding"];
+const categories = ["frontend", "fullstack", "backend"];
 
 const Work = () => {
   return (
@@ -182,13 +200,21 @@ const Work = () => {
                                 </div>
                                 {/* btns */}
                                 <div className="flex flex-col sm:flex-row gap-4 items-start">
-                                  <Link href={project.link}>
+                                  <Link
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
                                     <button className="btn btn-sm btn-accent flex gap-2">
                                       <MdArrowOutward className="text-xl" />
                                       <span>Live Project</span>
                                     </button>
                                   </Link>
-                                  <Link href={project.github}>
+                                  <Link
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                  >
                                     <button className="btn btn-sm btn-white flex gap-2">
                                       <FaGithub className="text-xl" />
                                       <span>Github Repo</span>

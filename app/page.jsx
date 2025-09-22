@@ -40,9 +40,9 @@ const Home = () => {
             />
           </h1>
           <p className="max-w-[500px] mb-[44px]">
-            I build visually capivating, user-friendly websites and web apps
-            that transform your ideas into seamless, engaging digital
-            experiences
+            I design and develop end-to-end web applications that merge
+            performance, usability, and innovation into impactful digital
+            experiences.
           </p>
           <button className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
@@ -85,10 +85,10 @@ const Home = () => {
             width={440}
             height={600}
             quality={100}
-            className="absolute top-12 left-[75px]"
+            className="absolute -top-16 left-[120px]"
           />
           {/*  overlay gradient */}
-          <div className="w-full h-[164px] absolute -bottom-16 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/90"></div>
+          <div className="w-full h-[170px] absolute -bottom-16 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/90"></div>
         </div>
       </div>
     </motion.section>

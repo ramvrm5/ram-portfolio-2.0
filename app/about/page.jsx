@@ -38,7 +38,7 @@ const About = () => {
             <div className="w-full h-[60px] absolute left-0 top-[420px] right-0 bg-gradient-to-t from-primary via-primary/90 z-30"></div>
 
             {/* blob */}
-            <div className="absolute -top-[20px] -left-[50px] z-10">
+            <div className="absolute top-[80px] -left-[80px] z-10">
               <Blob containerStyles="w-[420px] h-[420px]" />
             </div>
 
@@ -58,10 +58,9 @@ const About = () => {
                 <span className="text-accent">Ram</span> Verma
               </h2>
               <p className="max-w-[540px] mb-12">
-                I focus on crafting visually stunning, user-friendly web
-                experiences that not only look great but also function
-                seamlessly, ensuring every detail is carefully designed and
-                excecuted.
+                I specialize in building visually engaging, high-performing
+                applications that merge creative design, robust development, and
+                cloud-ready infrastructure for lasting impact.
               </p>
               <div className="flex flex-col items-start gap-16">
                 <Stats />

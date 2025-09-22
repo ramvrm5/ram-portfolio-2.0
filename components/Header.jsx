@@ -33,15 +33,19 @@ const Header = () => {
                 <SheetTitle>
                   <Logo />
                 </SheetTitle>
-                <SheetDescription className="sr-only">
+                {/* <SheetDescription className="sr-only">
                   Navigation menu
-                </SheetDescription>
+                </SheetDescription> */}
               </SheetHeader>
               <NavLinks containerStyles="flex flex-col gap-8 max-w-[100px]" />
               <div>
                 <button className="btn btn-lg btn-tertiary mb-16">
                   <div className="flex items-center gap-3">
-                    <span>Download CV</span>
+                    <span>
+                      <a href="/assets/cv.pdf" download>
+                        Download CV
+                      </a>
+                    </span>
                     <MdFileDownload className="text-xl" />
                   </div>
                 </button>

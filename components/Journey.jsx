@@ -1,18 +1,33 @@
 const journey = [
   {
-    years: "2022 - Present",
-    role: "Web Developer & Designer",
-    institution: "Tech Inc",
+    years: "Nov 2023 - Present",
+    role: "Senior Frontend Developer",
+    institution: "Syneos Health",
   },
   {
-    years: "2020 - 2022",
-    role: "Web Developer & Designer",
-    institution: "XYZ Company",
+    years: "Jan 2023 - Nov 2023",
+    role: "Full Stack Developer",
+    institution: "66degrees",
   },
   {
-    years: "2016 - 2020",
-    role: "Student",
-    institution: "University of Design",
+    years: "Jan 2020 - Jan 2023",
+    role: "Full Stack Developer",
+    institution: "Self-employed",
+  },
+  {
+    years: "Aug 2019 - Jan 2020",
+    role: "Full Stack Developer",
+    institution: "Webspero Solutions",
+  },
+  {
+    years: "Jan 2017 - Aug 2019",
+    role: "Full Stack Developer",
+    institution: "Webcome Technologies",
+  },
+  {
+    years: "Jul 2010 - Aug 2016",
+    role: "student",
+    institution: "Kuk University",
   },
 ];
 

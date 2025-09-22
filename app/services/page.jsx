@@ -16,7 +16,7 @@ const services = [
   {
     icon: "/assets/services/design.svg",
     href: "",
-    title: "Website Interface Design",
+    title: "Website Design & Development",
   },
   {
     icon: "/assets/services/frontend.svg",
@@ -31,12 +31,7 @@ const services = [
   {
     icon: "/assets/services/seo.svg",
     href: "",
-    title: "Search Engine Optimization",
-  },
-  {
-    icon: "/assets/services/video.svg",
-    href: "",
-    title: "Video Production",
+    title: "Full Stack Development",
   },
 ];
 
@@ -59,10 +54,10 @@ const Services = () => {
             Your Business
           </h2>
           {/* btn */}
-          <button className="btn btn-lg btn-accent flex gap-2">
+          {/* <button className="btn btn-lg btn-accent flex gap-2">
             All services
             <MdArrowRightAlt className="text-2xl" />
-          </button>
+          </button> */}
         </div>
         {/* slider */}
         <Swiper

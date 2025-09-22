@@ -5,7 +5,18 @@ import {
   RiCss3Fill,
   RiTailwindCssFill,
   RiNodejsFill,
+  RiFirebaseFill,
 } from "react-icons/ri";
+
+import {
+  SiVuedotjs,
+  SiExpo,
+  SiExpress,
+  SiWeb3Dotjs,
+  SiSolidity,
+  SiGooglecloud,
+  SiMongodb,
+} from "react-icons/si";
 
 import {
   Tooltip,
@@ -13,15 +24,22 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
 const skills = [
   {
-    icon: <RiNextjsFill />,
+    icon: <RiReactjsFill />,
     name: "React.js",
   },
   {
-    icon: <RiReactjsFill />,
+    icon: <RiNextjsFill />,
     name: "Next.js",
+  },
+  {
+    icon: <SiVuedotjs />,
+    name: "Vue.js",
+  },
+  {
+    icon: <SiExpo />,
+    name: "React Native (Expo)",
   },
   {
     icon: <RiHtml5Fill />,
@@ -38,6 +56,30 @@ const skills = [
   {
     icon: <RiNodejsFill />,
     name: "Node.js",
+  },
+  {
+    icon: <RiFirebaseFill />,
+    name: "Firebase",
+  },
+  {
+    icon: <SiExpress />,
+    name: "Express.js",
+  },
+  {
+    icon: <SiWeb3Dotjs />,
+    name: "web3.js",
+  },
+  {
+    icon: <SiSolidity />,
+    name: "Solidity",
+  },
+  {
+    icon: <SiGooglecloud />,
+    name: "Google Cloud Platform (GCP)",
+  },
+  {
+    icon: <SiMongodb />,
+    name: "MongoDB",
   },
 ];
 

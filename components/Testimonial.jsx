@@ -14,18 +14,18 @@ import { ImQuotesLeft } from "react-icons/im";
 const testimonial = [
   {
     message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing consectetur elit.",
-    name: "John Doe",
+      "Quick, fast, and done properly. Mr. Ram again worked wonderfully with our team to build our designs to pixel perfect, perfection, and implement the backend to our project in a timely and clean way.",
+    name: "Mrs. Jackie",
   },
   {
     message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing consectetur elit.",
-    name: "John Doe",
+      "He worked very hard on the project. He was very experienced and brought that into the work. He worked quickly but very detailed and organized. Even changes I mentioned in conversation he was able to fix. He was the 4th freelancer I used for this project and he was the only one who was able to get it done. He worked with my time pressures and gave an excellent final product.",
+    name: "James Whitmore",
   },
   {
     message:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing consectetur elit.",
-    name: "John Doe",
+      "Mr. Ram worked with our team on both the front end and the backend of the application. He was quick and diligent with his work. He made sure that every detail was fixed and working, and communicated well with us. He was a hard worker and made sure the team understood everything he did. He made changes when needed and got the work done perfectly in the end.",
+    name: "George Lawson",
   },
 ];
 

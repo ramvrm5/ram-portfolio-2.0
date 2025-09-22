@@ -119,8 +119,11 @@ const Contact = () => {
                     </SelectTrigger>
                     <SelectContent className="bg-black border-white/20">
                       <SelectItem value="webdev">Web Development</SelectItem>
-                      <SelectItem value="uiux">UI & UX Design</SelectItem>
-                      <SelectItem value="webdev">Logo Design</SelectItem>
+                      <SelectItem value="webdev">
+                        Full stack development
+                      </SelectItem>
+                      <SelectItem value="webdev">Frontend</SelectItem>
+                      <SelectItem value="webdev">Backend</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

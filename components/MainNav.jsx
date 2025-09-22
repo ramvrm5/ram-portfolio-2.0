@@ -12,7 +12,11 @@ const MainNav = () => {
         <NavLinks containerStyles="flex flex-col gap-6" />
         <button className="btn btn-lg btn-tertiary mb-16">
           <div className="flex items-center gap-3">
-            <span>Download CV</span>
+            <span>
+              <a href="/assets/cv.pdf" download>
+                Download CV
+              </a>
+            </span>
             <MdFileDownload className="text-xl" />
           </div>
         </button>

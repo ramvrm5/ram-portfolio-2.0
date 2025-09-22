@@ -1,26 +1,18 @@
 import {
   BiLogoFacebook,
   BiLogoInstagramAlt,
-  BiLogoDribbble,
+  BiLogoGithub,
   BiLogoLinkedin,
 } from "react-icons/bi";
 
 const socials = [
   {
-    icon: <BiLogoFacebook />,
-    path: "",
-  },
-  {
-    icon: <BiLogoInstagramAlt />,
-    path: "",
-  },
-  {
-    icon: <BiLogoDribbble />,
-    path: "",
+    icon: <BiLogoGithub />,
+    path: "https://github.com/ramvrm5",
   },
   {
     icon: <BiLogoLinkedin />,
-    path: "",
+    path: "https://linkedin.com/in/ramverma-softwaredeveloper",
   },
 ];
 
@@ -30,7 +22,9 @@ const Socials = ({ containerStyles, iconStyles }) => {
       {socials.map((item, index) => {
         return (
           <div key={index} className={iconStyles}>
-            {item.icon}
+            <a href={item.path} target="_blank" rel="noreferrer">
+              {item.icon}
+            </a>
           </div>
         );
       })}
