@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { MdArrowOutward } from "react-icons/md";
@@ -31,7 +33,12 @@ const Home = () => {
             Hi! I'm Ram,
             <br />
             <TypeAnimation
-              sequence={["Web Developer", 2000, "Web Designer", 2000]}
+              sequence={[
+                "Full Stack Developer",
+                2000,
+                "Frontend Engineer",
+                2000,
+              ]}
               wrapper="span"
               speed={40}
               className="text-accent"
@@ -44,12 +51,12 @@ const Home = () => {
             performance, usability, and innovation into impactful digital
             experiences.
           </p>
-          <button className="btn btn-lg btn-accent mb-16">
+          <Link href="/contact" className="btn btn-lg btn-accent mb-16">
             <div className="flex items-center gap-3">
               <span>Let's talk.</span>
               <MdArrowOutward className="text-xl" />
             </div>
-          </button>
+          </Link>
           {/*  contact info */}
           <div className="flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8">
             {/* phone */}

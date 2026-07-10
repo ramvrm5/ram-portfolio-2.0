@@ -16,6 +16,8 @@ import {
   SiSolidity,
   SiGooglecloud,
   SiMongodb,
+  SiPython,
+  SiPostgresql,
 } from "react-icons/si";
 
 import {
@@ -80,6 +82,14 @@ const skills = [
   {
     icon: <SiMongodb />,
     name: "MongoDB",
+  },
+  {
+    icon: <SiPython />,
+    name: "Python",
+  },
+  {
+    icon: <SiPostgresql />,
+    name: "Postgresql",
   },
 ];
 

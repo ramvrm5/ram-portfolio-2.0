@@ -29,8 +29,8 @@ const About = () => {
           <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
             <Image
               src="/assets/avatar11.png"
-              width={320}
-              height={496}
+              width={300}
+              height={420}
               alt=""
               className="z-20 relative"
             />

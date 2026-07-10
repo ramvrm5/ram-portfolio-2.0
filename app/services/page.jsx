@@ -1,37 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-// import swiper react component
-import { Swiper, SwiperSlide } from "swiper/react";
-// import swiper modules
-import { Pagination } from "swiper/modules";
-// import swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
 import Image from "next/image";
-import { MdOutlineArrowOutward, MdArrowRightAlt } from "react-icons/md";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const services = [
   {
     icon: "/assets/services/design.svg",
-    href: "",
     title: "Website Design & Development",
+    description:
+      "Modern, responsive websites built with strong visual design, clean structure, and smooth user experience.",
   },
   {
     icon: "/assets/services/frontend.svg",
-    href: "",
     title: "Frontend Development",
+    description:
+      "Interactive React and Next.js interfaces focused on performance, accessibility, and polished UI behavior.",
   },
   {
     icon: "/assets/services/backend.svg",
-    href: "",
     title: "Backend Development",
+    description:
+      "Reliable APIs, authentication flows, databases, and integrations that support real product workflows.",
   },
   {
     icon: "/assets/services/seo.svg",
-    href: "",
     title: "Full Stack Development",
+    description:
+      "Complete web applications from frontend to backend, including deployment-ready architecture.",
   },
 ];
 
@@ -43,52 +39,51 @@ const Services = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="h-screen flex items-center"
+      className="h-screen flex flex-col pt-[140px] pb-8 xl:pt-0 xl:pb-0 xl:justify-center"
     >
-      <div className="container mx-auto w-full flex flex-col gap-16">
-        {/* text */}
-        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center gap-8">
-          {/* headline */}
-          <h2 className="h2 max-w-[480px] text-left xl:mb-0">
-            Custom<span className="text-accent"> Web Solutions</span> to Boost
+      <div className="container mx-auto w-full flex flex-col gap-8 xl:gap-12 min-h-0">
+        <div className="flex-shrink-0 flex flex-col gap-4">
+          <h2 className="h2 max-w-[620px] text-left">
+            Custom <span className="text-accent">Web Solutions</span> to Boost
             Your Business
           </h2>
-          {/* btn */}
-          {/* <button className="btn btn-lg btn-accent flex gap-2">
-            All services
-            <MdArrowRightAlt className="text-2xl" />
-          </button> */}
+
+          <p className="max-w-[620px] text-white/70">
+            I help businesses and teams build clean, scalable, and
+            conversion-focused digital products.
+          </p>
         </div>
-        {/* slider */}
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-          modules={[Pagination]}
-          pagination={{ clickable: true, dynamicBullets: true }}
-          className="h-[320px]"
-        >
-          {services.map((item, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <div className="bg-secondary/90 w-full h-[284px] rounded-[20px] px-[30px] py-[40px] flex flex-col justify-between">
-                  <div className="flex items-center justify-between mb-12">
-                    <Image src={item.icon} width={48} height={48} alt="" />
-                    <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all">
-                      <MdOutlineArrowOutward />
+
+        <div className="min-h-0 overflow-y-auto pr-2 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 xl:overflow-visible xl:pr-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pb-4 xl:pb-0">
+            {services.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className="bg-secondary/90 min-h-[300px] rounded-[20px] px-[28px] py-[34px] flex flex-col justify-between border border-white/5 hover:border-accent/50 transition-all"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-10">
+                      <Image src={item.icon} width={48} height={48} alt="" />
+
+                      <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-2xl hover:rotate-45 transition-all">
+                        <MdOutlineArrowOutward />
+                      </div>
                     </div>
+
+                    <h5 className="text-[22px] font-medium mb-4 leading-snug">
+                      {item.title}
+                    </h5>
+
+                    <p className="text-white/60 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                  <h5 className="text-[22px] font-medium max-w-[240px]">
-                    {item.title}
-                  </h5>
                 </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </motion.section>
   );
