@@ -15,7 +15,7 @@ import { MdFileDownload } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header className="2xl:hidden absolute z-40 left-0 top-0 right-0 ">
+    <header className="2xl:hidden fixed xl:absolute z-40 left-0 top-0 right-0 bg-primary/95 xl:bg-transparent">
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6">
           {/* logo */}

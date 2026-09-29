@@ -124,15 +124,18 @@ const Work = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-screen flex items-center py-24 xl:py-0"
+      className="h-[100dvh] overflow-hidden flex flex-col pt-[112px] pb-6 xl:min-h-screen xl:items-center xl:justify-center xl:py-0"
     >
-      <div className="container mx-auto w-full h-full flex flex-col justify-center">
+      <div className="container mx-auto w-full flex flex-1 min-h-0 flex-col xl:h-full xl:flex-none xl:justify-center">
         <h2 className="h2 mb-6 xl:mb-10 max-w-[650px]">
           My Latest <span className="text-accent">Work</span>
         </h2>
 
-        <Tabs defaultValue="frontend" className="w-full flex flex-col gap-8">
-          <TabsList className="flex flex-wrap justify-center xl:justify-start items-center gap-4 h-full">
+        <Tabs
+          defaultValue="frontend"
+          className="w-full flex flex-1 min-h-0 flex-col gap-6 xl:flex-none xl:gap-8"
+        >
+          <TabsList className="flex flex-shrink-0 flex-wrap justify-center xl:justify-start items-center gap-4 h-auto">
             {categories.map((category) => {
               return (
                 <TabsTrigger
@@ -146,7 +149,7 @@ const Work = () => {
             })}
           </TabsList>
 
-          <div className="max-h-[620px] xl:max-h-[560px] overflow-y-auto pr-2 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5">
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-2 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 xl:max-h-[560px] xl:flex-none">
             {categories.map((category) => {
               const filteredProjects = projects.filter(
                 (project) => project.category === category,
@@ -154,7 +157,7 @@ const Work = () => {
 
               return (
                 <TabsContent key={category} value={category} className="mt-0">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-16 xl:pb-0">
                     {filteredProjects.map((project) => {
                       return (
                         <div

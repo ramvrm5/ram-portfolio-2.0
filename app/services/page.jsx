@@ -39,9 +39,9 @@ const Services = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="h-screen flex flex-col pt-[140px] pb-8 xl:pt-0 xl:pb-0 xl:justify-center"
+      className="h-[100dvh] overflow-hidden flex flex-col pt-[112px] pb-6 xl:h-screen xl:pt-0 xl:pb-0 xl:justify-center"
     >
-      <div className="container mx-auto w-full flex flex-col gap-8 xl:gap-12 min-h-0">
+      <div className="container mx-auto w-full flex flex-1 flex-col gap-6 min-h-0 xl:flex-none xl:gap-12">
         <div className="flex-shrink-0 flex flex-col gap-4">
           <h2 className="h2 max-w-[620px] text-left">
             Custom <span className="text-accent">Web Solutions</span> to Boost
@@ -54,8 +54,8 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="min-h-0 overflow-y-auto pr-2 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 xl:overflow-visible xl:pr-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pb-4 xl:pb-0">
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain pr-2 scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 xl:flex-none xl:overflow-visible xl:pr-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pb-16 xl:pb-0">
             {services.map((item, index) => {
               return (
                 <div

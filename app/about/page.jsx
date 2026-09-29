@@ -21,10 +21,10 @@ const About = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="h-screen flex items-center"
+      className="h-[100dvh] overflow-hidden flex pt-[112px] pb-6 xl:h-screen xl:items-center xl:pt-0 xl:pb-0"
     >
-      <div className="container mx-auto px-0">
-        <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]">
+      <div className="container mx-auto px-0 flex-1 min-h-0 xl:flex-none">
+        <div className="flex flex-col xl:flex-row items-center gap-8 xl:gap-24 w-full h-full min-h-0 xl:h-[680px]">
           {/* img & social icons */}
           <div className="hidden xl:flex flex-col w-full h-full pt-14 max-w-[430px] relative">
             <Image
@@ -48,8 +48,8 @@ const About = () => {
             />
           </div>
           {/* scroll area */}
-          <ScrollArea className="w-full h-[680px]">
-            <div>
+          <ScrollArea className="w-full h-full min-h-0 xl:h-[680px]">
+            <div className="pb-16 pr-3 xl:pb-0 xl:pr-0">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <p>About me</p>
